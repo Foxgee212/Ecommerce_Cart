@@ -32,11 +32,11 @@ export default function Cart() {
             {cart.map((item) => (
               <li key={item.id} className="flex justify-between p-2 border-b">
                 <div className="w-2xs">
-                  <img src={item.image} alt={item.name} className="h-30 mx-auto float-left"/>
+                  <img src={`${import.meta.env.BASE_URL}${item.image}`}  alt={item.name} className="h-30 mx-auto float-left"/>
                   <div className="flex items-start flex-col">
                   <span className="ml-6 text-2xl font-medium ">{item.name}</span>
                   <span className="ml-6  bg-gray-200 p-2 rounded-2xl font-medium">{item.qty}</span>
-                  <span className="ml-6 font-">₦{(item.price * item.qty).toLocaleString()}</span>
+                  <span className="ml-6 font-n">₦{(item.price * item.qty).toLocaleString()}</span>
 
                   </div>
                 </div>

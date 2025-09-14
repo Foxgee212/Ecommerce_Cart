@@ -10,7 +10,7 @@ import { FaHome } from "react-icons/fa";
 function App() {
   return (
     <CartProvider>
-      <Router>
+      <Router  basename= "/Ecommerce_Cart">
         <nav className="p-4 bg-gray-800 text-white flex justify-between">
           <Link to="/"> <FaHome size={30} className="hover:text-blue-500" />Shop</Link>
           <Link to="/cart"><FaShoppingCart size={28} className="hover:text-blue-500" /></Link>
